@@ -135,6 +135,9 @@ table {
 
 body {
   background-color: black;
+
+  color: blanchedalmond;
+  font-family: "Lora", serif;
 }
 
 h1 {
@@ -145,13 +148,12 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  color: black;
+  color: blanchedalmond;
   font-family: "Roboto", sans-serif;
 }
 
 .nav-header {
   width: 90rem;
-  border: 1px solid black;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 
@@ -224,5 +226,34 @@ h2 {
 
 .image-panel {
   display: flex;
-  max-width: 90%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+
+  max-width: 100%;
+  margin: 2% 5% 2% 5%;
+}
+
+.image-box {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+  max-width: 30%;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
 }

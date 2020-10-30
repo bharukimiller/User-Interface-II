@@ -131,6 +131,7 @@ table {
 
 * {
   font-size: 62.5%;
+  background-color: blue;
 }
 h1 {
   font-size: 3rem;
@@ -140,17 +141,31 @@ h1 {
 .nav-header {
   width: 90rem;
   border: 1px solid black;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  opacity: 70%;
 }
 
 .navbar a {
   width: 5rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 
+  text-align: center;
   text-decoration: none;
   color: white;
+
+  border-left: 0.5px solid black;
+  border-right: 0.5px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .navbar .links {

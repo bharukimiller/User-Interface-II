@@ -131,6 +131,8 @@ table {
 
 * {
   font-size: 62.5%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 body {
@@ -204,6 +206,116 @@ h2 {
   background-image: url("https://unsplash.com/photos/6iM5GOht664/download?force=true&w=1920");
   max-width: 90%;
   height: 80vh;
+
+  margin: 1% 2% 1% 5%;
+}
+
+.hero-button {
+  background-color: black;
+  color: blanchedalmond;
+
+  border-radius: 50px;
+
+  padding: 1% 2% 1% 2%;
+
+  margin: 1% 1% 1% 1%;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.image-panel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+
+  max-width: 100%;
+  margin: 2% 5% 2% 5%;
+}
+
+.image-box {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+  max-width: 30%;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+}
+
+/***MOBILE QUERIES*****/
+@media (max-width: 800px) {
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-header {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  opacity: 1;
+}
+
+.header-name {
+  font-family: "Roboto", sans-serif;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navbar a {
+  width: 20%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.navbar .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-display {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("https://unsplash.com/photos/6iM5GOht664/download?force=true&w=1920")
+    no-repeat;
+  max-width: 100%;
+  height: 60vh;
 
   margin: 1% 2% 1% 5%;
 }
